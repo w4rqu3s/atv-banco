@@ -1,6 +1,12 @@
 // React Router
 import { createBrowserRouter, } from "react-router-dom";
 import App from "./App";
+import ClientScreen from "./pages/client";
+import InvestmentsScreen from "./pages/investments";
+import LoginScreen from "./pages/login";
+import ManagerScreen from "./pages/manager";
+import SignUpScreen from "./pages/signup";
+import StatementScreen from "./pages/statement";
 
 const router = createBrowserRouter([
     { 
@@ -9,27 +15,27 @@ const router = createBrowserRouter([
     },
     {       
         path: "/login", 
-        element: <App />
+        element: <LoginScreen />
     },
     {          
         path: "/signup", 
-        element: <App />
+        element: <SignUpScreen />
     },
     {        
         path: "/client", 
-        element: <App />
+        element: <ClientScreen />
     },
     {        
         path: "/statement", 
-        element: <App />
+        element: <StatementScreen />
     },
     {          
         path: "/investments", 
-        element: <App />
+        element: <InvestmentsScreen />
     },
     {          
         path: "/manager", 
-        element: <App />
+        element: <ManagerScreen />
     },
 ])
 

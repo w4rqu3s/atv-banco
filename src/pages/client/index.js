@@ -1,10 +1,10 @@
 import { Container } from './style'
 
-export default function ResetPassword() {
+export default function ClientScreen() {
 
     return (  
         <Container>
-            <App />
+           <h1>TELA CLIENTE</h1>
         </Container>
     )
 }
